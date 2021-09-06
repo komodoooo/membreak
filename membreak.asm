@@ -28,7 +28,7 @@ monke:
 loop monke              ;the monke call our 'payload' (lol)
 
 section .data
-    msg dw "1000101"    ; the number 69 in binary code 
+    msg db "hey"        ;hey
 len equ $ -msg
 
 section .bss
