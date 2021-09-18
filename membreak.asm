@@ -29,7 +29,7 @@ monke:
 loop monke              ;the monke call our 'payload' (lol)
 
 section .data
-    msg db "hey "        ;hey
+    msg dw '0'        ;hey
 len equ $ -msg
 
 section .bss
