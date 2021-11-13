@@ -28,8 +28,8 @@ buff:
 
 monke:
     call buff
-    call payload
-loop monke              ;the monke call our 'payload' (lol)
+    call payload        ;the monke call our 'payload' (lol)
+loop monke              
 
 section .data
     msg db 'S'       
