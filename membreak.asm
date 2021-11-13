@@ -14,7 +14,7 @@ payload:
     mov edx, ass
     mov ebx, 1          
     mov eax, 4
-    int 0x80            
+    int 0x80            ;a normie kernel call
     
     mov ebx, eax    
     int 0x80            ;a normie kernel call
@@ -24,7 +24,7 @@ buff:
     pop ecx
     xor ebx, eax        ;clear registers
     call payload   
-    int 0x80
+    int 0x80            ;a normie kernel call
 
 monke:
     call buff
@@ -32,10 +32,10 @@ monke:
 loop monke              
 
 section .data
-    msg db 'S'       
+    msg db 'S'        
     ass dw 69           ; 69 to ascii: 'E'
     uwu db 'X'
-    ret 0    
+    ret 0 
 len equ $ -msg
 
 section .bss
