@@ -8,14 +8,16 @@ section .text
 _start:
     jmp monke           ;monke jump
 payload:
-    mov edx, len        ;add lenght and msg, for a normal textual print
-    mov ecx, msg        
-    mov ebx, 1          ;The trick is fix the null bytes.
+    mov edx, len        
+    mov edx, msg        
+    mov edx, uwu        ;Yeah, it's for... a normal textual print?
+    mov edx, ass
+    mov ebx, 1          
     mov eax, 4
     int 0x80            
     
     mov ebx, eax    
-    int 0x80            ;kernel call
+    int 0x80            ;a normie kernel call
 
 buff:
     pop edx
@@ -26,10 +28,14 @@ buff:
 
 monke:
     call buff
+    call payload
 loop monke              ;the monke call our 'payload' (lol)
 
 section .data
-    msg dw '0'        ;hey
+    msg db 'S'       
+    ass dw 69           ; 69 to ascii: 'E'
+    uwu db 'X'
+    ret 0    
 len equ $ -msg
 
 section .bss
