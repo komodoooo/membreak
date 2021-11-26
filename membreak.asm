@@ -7,6 +7,8 @@ section .text
     global _start:
 _start:
     jmp monke           ;monke jump
+    mov cx,10           
+    int 0x80            ;a normie kernel call
 payload:
     mov edx, len        
     mov edx, msg        
@@ -35,7 +37,7 @@ section .data
     msg db 'S'        
     ass dw 69           ; 69 to ascii: 'E'
     uwu db 'X'
-    ret 0 
+    ret 0
 len equ $ -msg
 
 section .bss
