@@ -4,7 +4,7 @@
 ;   enjoy this shit and have sex
 
 section .text
-    global _start:
+    global _start
 _start:
     jmp monke           ;monke jump
     mov cx,10           
