@@ -10,8 +10,10 @@ _start:
     mov cx,10           
     int 0x80            ;a normie kernel call
 payload:
-    mov edx, len        
-    mov edx, msg        
+    mov edx, sex
+    mov edx, mad   
+    mov edx, bruh     
+    mov edx, nigger        
     mov edx, uwu        ;Yeah, it's for... a normal textual print?
     mov edx, ass
     mov ebx, 1          
@@ -34,11 +36,13 @@ monke:
 loop monke              
 
 section .data
-    msg db 'S'        
+    nigger db 'S'        
     ass dw 69           ; 69 to ascii: 'E'
     uwu db 'X'
     ret 0
-len equ $ -msg
+sex equ $ -nigger
+mad equ $ -ass          ;science time
+bruh equ $ -uwu
 
 section .bss
     num resb 1
