@@ -1,5 +1,5 @@
 # membreak
-Membreak is a simple memory corrupter made in NASM assembly.
+Membreak is a simple memory corrupter made in NASM x86 assembly.
 
 here the results of the online compiler:
 
