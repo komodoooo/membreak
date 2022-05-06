@@ -1,5 +1,5 @@
 compile:
 	nasm -f elf membreak.asm
-	ld -s -o membreak membreak.o
+	ld membreak.o -o membreak 
 execute:
 	./membreak
