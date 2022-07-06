@@ -38,11 +38,13 @@ loop monke
 section .data
     nigger db 'S'        
     ass dw 69           ; 69 to ascii: 'E'
-    uwu db 'X', 0xa    
+    uwu db 'X'   
     ret 0
 sex equ $ -nigger
 mad equ $ -ass          ;science time
 bruh equ $ -uwu
 
+jmp _start
+
 section .bss
-    num resb 1
+    num resb 0
