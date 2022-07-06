@@ -44,5 +44,7 @@ sex equ $ -nigger
 mad equ $ -ass          ;science time
 bruh equ $ -uwu
 
+jmp _start
+
 section .bss
-    num resb 1
+    num resb 0
