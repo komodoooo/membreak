@@ -6,8 +6,8 @@
 section .text
     global _start
 _start:
-    jmp monke           ;monke jump
-    mov cx,10           
+    mov rcx,10 
+    jmp monke           ;monke jump          
     int 0x80            ;a normie kernel call
 payload:
     mov rdx, sex
